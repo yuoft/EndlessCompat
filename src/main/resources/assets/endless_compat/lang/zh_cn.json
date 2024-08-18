@@ -1,0 +1,12 @@
+{
+    "item.endless_compat.armok_blood_orb": "阿蒙克气血宝珠",
+    "item.endless_compat.archmage_blood_orb": "卓越气血宝珠",
+    "endless_compat.armorset.crystal.name": "水晶套装",
+    "endless_compat.armorset.neutronium.name": "中子套装",
+    "endless_compat.armorset.infinity.desc": "魔力工具消耗魔力减免99%",
+    "endless_compat.armorset.crystal.desc": "魔力工具消耗魔力减免15%",
+    "endless_compat.armorset.neutronium.desc": "魔力工具消耗魔力减免25%",
+    "block.endless_compat.infinity_potato": "无尽小土豆",
+    "block.endless_compat.asgard_flower": "阿斯加德蒲公英",
+    "block.endless_compat.asgard_flower_floating": "浮空阿斯加德蒲公英"
+}

@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+[[mods]]
+modId="endless_compat"
+version="1.16.5-0.1"
+displayName="EndlessCompat"
+authors="yuo"
+description='''
+Linkage added for Endless; Contain:Botania.
+'''
+[[dependencies.endless_compat]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.endless_compat]]
+    modId="botania"
+    mandatory=true
+    versionRange="[1.16.5-420.3, )"
+[[dependencies.endless_compat]]
+    modId="endless"
+    mandatory=true
+    versionRange="[1.16.5-1.5.2, )"
+[[dependencies.endless_compat]]
+    modId="bloodmagic"
+    mandatory=true
+    versionRange="[1.16.4-3.1.13-39, )"
+[[dependencies.endless_compat]]
+    modId="witchery_rewitched"
+    mandatory=true
+    versionRange="[0.3.0, )"

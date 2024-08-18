@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "endless_compat:asgard_flower"
+    },
+    {
+      "tag": "botania:floating_flowers"
+    }
+  ],
+  "result": {
+    "item": "endless_compat:asgard_flower_floating"
+  }
+}

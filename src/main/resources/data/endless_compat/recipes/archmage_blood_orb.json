@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bloodmagic"
+    }
+  ],
+  "type": "bloodmagic:altar",
+  "input": {
+    "item": "minecraft:netherite_block"
+  },
+  "output": {
+    "item": "endless_compat:archmage_blood_orb"
+  },
+  "upgradeLevel": 4,
+  "altarSyphon": 100000,
+  "consumptionRate": 50,
+  "drainRate": 80
+}

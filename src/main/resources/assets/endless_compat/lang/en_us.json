@@ -1,0 +1,12 @@
+{
+  "item.endless_compat.armok_blood_orb": "Blood Orb of Armok",
+  "item.endless_compat.archmage_blood_orb": "Blood Orb of Archmage",
+  "endless_compat.armorset.crystal.name": "Crystal",
+  "endless_compat.armorset.neutronium.name": "Neutronium",
+  "endless_compat.armorset.infinity.desc": "99%% less Mana cost on Mana Tools and Rods",
+  "endless_compat.armorset.crystal.desc": "15%% less Mana cost on Mana Tools and Rods",
+  "endless_compat.armorset.neutronium.desc": "25%% less Mana cost on Mana Tools and Rods",
+  "block.endless_compat.infinity_potato": "Infinity Potato",
+  "block.endless_compat.asgard_flower": "Asgard Flower",
+  "block.endless_compat.asgard_flower_floating": "Asgard Flower Floating"
+}
