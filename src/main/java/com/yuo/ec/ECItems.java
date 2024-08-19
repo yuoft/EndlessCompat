@@ -29,4 +29,7 @@ public class ECItems {
             ()  -> new BloodOrb(new ResourceLocation(EndlessCompat.MOD_ID, "armok_blood_orb"), 9, Integer.MAX_VALUE, 99));
     public static RegistryObject<Item> armokBloodOrb = ITEMS.register("armok_blood_orb", () -> new ArmokBloodOrb(ORB_ARMOK));
     public static RegistryObject<Item> archmageBloodOrb = ITEMS.register("archmage_blood_orb", () -> new ArmokBloodOrb(BloodMagicItems.ORB_ARCHMAGE));
+
+    public static RegistryObject<BlockItem> infinityEgg = ITEMS.register("infinity_egg", () -> new BlockItem(ECBlocks.infinityEgg.get(),  BLOCK_TAB.maxStackSize(64)));
+
 }
