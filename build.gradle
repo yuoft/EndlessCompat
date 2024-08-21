@@ -9,14 +9,12 @@ buildscript {
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
-apply plugin: 'org.spongepowered.mixin'
 
 version = '1.16.5-0.0.1'
 group = 'com.yuo.ec' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -115,8 +113,6 @@ dependencies {
     runtimeOnly fg.deobf("com.hero.witchery_rewitched:witchery_rewitched:${wr_ver}")
     runtimeOnly fg.deobf("hellfirepvp.observerlib:observerlib:${mc_ver}-${observerlib_ver}")
     runtimeOnly fg.deobf("com.favouriteless.enchanted:enchanted:${mc_ver}-${enchanted_ver}")
-
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
