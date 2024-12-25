@@ -1,6 +1,6 @@
 package com.yuo.ec.Bm3;
 
-import com.yuo.endless.EndlessTab;
+import com.yuo.ec.ECTab;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -33,7 +33,7 @@ public class ArmokBloodOrb extends Item implements IBindable, IBloodOrb, IForgeI
     private final Supplier<BloodOrb> sup;
 
     public ArmokBloodOrb(Supplier<BloodOrb> sup) {
-        super((new Item.Properties()).maxStackSize(1).group(EndlessTab.endless));
+        super((new Item.Properties()).maxStackSize(1).group(ECTab.EC_TAB));
         this.sup = sup;
     }
 
@@ -49,10 +49,8 @@ public class ArmokBloodOrb extends Item implements IBindable, IBloodOrb, IForgeI
         BloodOrb orb = this.getOrb(stack);
         if (orb == null) {
             return ActionResult.resultFail(stack);
-        } else if (world == null) {
-            return super.onItemRightClick(world, player, hand);
         } else {
-            world.playSound((PlayerEntity)null, player.getPosX(), player.getPosY(), player.getPosZ(), SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.5F, 2.6F + (world.rand.nextFloat() - world.rand.nextFloat()) * 0.8F);
+            world.playSound(null, player.getPosX(), player.getPosY(), player.getPosZ(), SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.5F, 2.6F + (world.rand.nextFloat() - world.rand.nextFloat()) * 0.8F);
             if (PlayerHelper.isFakePlayer(player)) {
                 return super.onItemRightClick(world, player, hand);
             } else if (!stack.hasTag()) {

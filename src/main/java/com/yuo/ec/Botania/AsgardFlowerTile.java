@@ -13,7 +13,7 @@ public class AsgardFlowerTile extends TileEntityGeneratingFlower {
     private static final int RANGE = 8;
 
     public AsgardFlowerTile() {
-        super(ECTileTypes.ASGARD_FLOWER_TILE.get());
+        super(ECTileTypes.ASGARD_FLOWER.get());
     }
 
     @Override
@@ -46,7 +46,7 @@ public class AsgardFlowerTile extends TileEntityGeneratingFlower {
 
         //产能
         long gameTime = world.getGameTime();
-        if (gameTime % 5 == 0){
+        if (gameTime % 2 == 0){
             addMana(Integer.MAX_VALUE);
         }
 
@@ -62,6 +62,11 @@ public class AsgardFlowerTile extends TileEntityGeneratingFlower {
                     }
                 }
             }
+    }
+
+    @Override
+    public int getValueForPassiveGeneration() {
+        return Integer.MAX_VALUE;
     }
 
     @Override

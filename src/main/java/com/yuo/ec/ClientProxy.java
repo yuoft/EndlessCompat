@@ -1,6 +1,7 @@
 package com.yuo.ec;
 
 import com.yuo.ec.Botania.InfinityPotatoRender;
+import com.yuo.ec.Botania.InfinityTileSpreaderRender;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.tileentity.TileEntity;
@@ -34,12 +35,14 @@ public class ClientProxy extends CommonProxy{
     private  void clientSetup(final FMLClientSetupEvent event) {
         //TESR 方块实体渲染
         event.enqueueWork(() ->{
-            ClientRegistry.bindTileEntityRenderer(ECTileTypes.INFINITY_POTATO_TILE.get(), InfinityPotatoRender::new);
-            ClientRegistry.bindTileEntityRenderer(ECTileTypes.ASGARD_FLOWER_TILE.get(), RenderTileSpecialFlower::new);
+            ClientRegistry.bindTileEntityRenderer(ECTileTypes.INFINITY_POTATO.get(), InfinityPotatoRender::new);
+            ClientRegistry.bindTileEntityRenderer(ECTileTypes.ASGARD_FLOWER.get(), RenderTileSpecialFlower::new);
+            ClientRegistry.bindTileEntityRenderer(ECTileTypes.INFINITY_SPREADER.get(), InfinityTileSpreaderRender::new);
         });
 
         RenderTypeLookup.setRenderLayer(ECBlocks.asgardFlower.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ECBlocks.asgardFlowerFloating.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ECBlocks.infinityManaSpreader.get(), RenderType.getCutout());
     }
 
 }

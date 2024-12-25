@@ -1,0 +1,8 @@
+{
+  "parent": "botania:block/shapes/spreader_item",
+  "textures": {
+    "side": "endless_compat:block/infinity_mana_spreader",
+    "material": "endless_compat:block/block_infinity",
+    "inside": "endless_compat:block/infinity_spreader_side"
+  }
+}

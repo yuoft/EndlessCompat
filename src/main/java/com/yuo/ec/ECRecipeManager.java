@@ -6,6 +6,7 @@ import com.yuo.endless.Recipe.ExtremeCraftingManager;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import vazkii.botania.common.block.ModBlocks;
+import vazkii.botania.common.item.ModItems;
 
 public class ECRecipeManager {
 
@@ -74,5 +75,21 @@ public class ECRecipeManager {
                 'A', new ItemStack(EndlessItems.infinityIngot.get()),
                 'B', new ItemStack(EndlessItems.neutroniumIngot.get()),
                 'C', new ItemStack(Items.DRAGON_EGG));
+        ExtremeCraftingManager.getInstance().addRecipe(new ItemStack(ECItems.infinityManaSpreader.get()),
+                "         ",
+                " AABBBAA ",
+                " ACCCCCA ",
+                " DEEEECB ",
+                " DDDFECB ",
+                " DEEEECB ",
+                " ACCCCCA ",
+                " AABBBAA ",
+                "         ",
+                'A', new ItemStack(EndlessItems.infinityIngot.get()),
+                'B', new ItemStack(EndlessItems.crystalMatrixIngot.get()),
+                'C', new ItemStack(ModItems.gaiaIngot),
+                'D', new ItemStack(EndlessItems.infinityCatalyst.get()),
+                'E', new ItemStack(ModBlocks.dreamwoodGlimmering),
+                'F', new ItemStack(ModBlocks.gaiaSpreader));
     }
 }

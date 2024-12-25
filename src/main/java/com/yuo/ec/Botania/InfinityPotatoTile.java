@@ -49,7 +49,7 @@ public class InfinityPotatoTile extends TileExposedSimple implements ITickableTi
     private final LazyValue<int[]> slots = new LazyValue<>(() -> IntStream.range(0, getSizeInventory()).toArray());
 
     public InfinityPotatoTile() {
-        super(ECTileTypes.INFINITY_POTATO_TILE.get());
+        super(ECTileTypes.INFINITY_POTATO.get());
     }
 
     private void jump() {
