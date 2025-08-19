@@ -1,0 +1,28 @@
+{
+  "type": "endless:extreme_craft",
+  "pattern": [
+    "   BBB   ",
+    "  BBBBB  ",
+    "  BBBBB  ",
+    " BBBABBB ",
+    "BBBAAABBB",
+    "BBAACAABB",
+    "BBBAAABBB",
+    " BBBABBB ",
+    "  BBBBB  "
+  ],
+  "key": {
+    "A": {
+      "item": "endless:infinity_ingot"
+    },
+    "B": {
+      "item": "endless:neutronium_ingot"
+    },
+    "C": {
+      "item": "minecraft:dragon_egg"
+    }
+  },
+  "result": {
+    "item": "endless_compat:infinity_egg"
+  }
+}

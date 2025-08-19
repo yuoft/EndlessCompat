@@ -1,0 +1,8 @@
+{
+  "parent": "block/dragon_egg",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "endless_compat:block/infinity_egg",
+    "all": "endless_compat:block/infinity_egg"
+  }
+}

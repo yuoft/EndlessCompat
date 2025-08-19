@@ -1,0 +1,28 @@
+{
+  "type": "endless:extreme_craft",
+  "pattern": [
+    "AAAAAAAAA",
+    "AAAAAAAAA",
+    "AAACACAAA",
+    "AAAAAAAAA",
+    "AACABACAA",
+    "AAACCCAAA",
+    "AAAAAAAAA",
+    "AAAAAAAAA",
+    "AAAAAAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "botania:tiny_potato"
+    },
+    "B": {
+      "item": "endless:infinity_catalyst"
+    },
+    "C": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "endless_compat:infinity_potato"
+  }
+}

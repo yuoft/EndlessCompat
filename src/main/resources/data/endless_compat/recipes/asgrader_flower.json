@@ -1,0 +1,31 @@
+{
+  "type": "endless:extreme_craft",
+  "pattern": [
+    "   AAA   ",
+    "  AAAAA  ",
+    "  AABAA  ",
+    "  AAAAA  ",
+    "   AAA   ",
+    " CC D CC ",
+    "CCCCDCCCC",
+    " CC D CC ",
+    "    D    "
+  ],
+  "key": {
+    "A": {
+      "item": "endless:infinity_ingot"
+    },
+    "B": {
+      "item": "endless:infinity_catalyst"
+    },
+    "C": {
+      "item": "endless:neutronium_nugget"
+    },
+    "D": {
+      "item": "endless:neutronium_ingot"
+    }
+  },
+  "result": {
+    "item": "endless_compat:asgard_flower"
+  }
+}

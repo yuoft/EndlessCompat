@@ -1,0 +1,31 @@
+{
+  "type": "endless:extreme_craft",
+  "pattern": [
+    "   AAA   ",
+    "  ACACA  ",
+    "  AABAA  ",
+    " DACACAD ",
+    "DDDAAADDD",
+    " DDDDDDD ",
+    "   DDD   ",
+    "         ",
+    "         "
+  ],
+  "key": {
+    "A": {
+      "item": "endless:infinity_ingot"
+    },
+    "B": {
+      "item": "endless:infinity_catalyst"
+    },
+    "C": {
+      "item": "bloodmagic:archmagebloodorb"
+    },
+    "D": {
+      "item": "endless:neutronium_ingot"
+    }
+  },
+  "result": {
+    "item": "endless_compat:armok_blood_orb"
+  }
+}

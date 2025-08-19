@@ -1,0 +1,36 @@
+{
+  "type": "endless:extreme_craft",
+  "pattern": [
+    "         ",
+    " AABBBAA ",
+    " ACCCCCA ",
+    " DEEEECB ",
+    " DDDFECB ",
+    " DEEEECB ",
+    " ACCCCCA ",
+    " AABBBAA "
+  ],
+  "key": {
+    "A": {
+      "item": "endless:infinity_ingot"
+    },
+    "B": {
+      "item": "endless:crystal_matrix_ingot"
+    },
+    "C": {
+      "item": "botania:gaia_ingot"
+    },
+    "D": {
+      "item": "endless:infinity_catalyst"
+    },
+    "E": {
+      "item": "botania:glimmering_dreamwood"
+    },
+    "F": {
+      "item": "botania:gaia_spreader"
+    }
+  },
+  "result": {
+    "item": "endless_compat:infinity_mana_spreader"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "block": "endless_compat:infinity_egg",
+      "powerMultiplier": 42.0,
+      "rechargeMultiplier": 9.0,
+      "priority": 9
+    }
+  ]
+}
