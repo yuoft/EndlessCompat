@@ -14,6 +14,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import vazkii.botania.api.BotaniaForgeCapabilities;
 import vazkii.botania.api.BotaniaForgeClientCapabilities;
+import vazkii.botania.api.block_entity.BindableSpecialFlowerBlockEntity;
+import vazkii.botania.api.block_entity.BindableSpecialFlowerBlockEntity.BindableFlowerWandHud;
 import vazkii.botania.client.render.block_entity.SpecialFlowerBlockEntityRenderer;
 import vazkii.botania.common.lib.ResourceLocationHelper;
 import vazkii.botania.forge.CapabilityUtil;
@@ -42,12 +44,15 @@ public class ClientProxy extends CommonProxy{
         event.enqueueWork(() ->{
             BlockEntityRenderers.register(ECTileTypes.INFINITY_POTATO.get(), InfinityPotatoRender::new);
             BlockEntityRenderers.register(ECTileTypes.ASGARD_FLOWER.get(), SpecialFlowerBlockEntityRenderer::new);
+            BlockEntityRenderers.register(ECTileTypes.SOAR_LEANDER.get(), SpecialFlowerBlockEntityRenderer::new);
             BlockEntityRenderers.register(ECTileTypes.INFINITY_SPREADER.get(), InfinityTileSpreaderRender::new);
             BlockEntityRenderers.register(ECTileTypes.INFINITY_POOL.get(), InfinityManaPoolRender::new);
         });
 
         ItemBlockRenderTypes.setRenderLayer(ECBlocks.asgardFlower.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ECBlocks.asgardFlowerFloating.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ECBlocks.soarleander.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ECBlocks.soarleanderFloating.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ECBlocks.infinityManaSpreader.get(), RenderType.cutout());
 
         IEventBus bus = MinecraftForge.EVENT_BUS;
@@ -62,7 +67,12 @@ public class ClientProxy extends CommonProxy{
         BlockEntity be = e.getObject();
         if (be instanceof AsgardFlowerTile tile) {
             e.addCapability(ResourceLocationHelper.prefix("wand_hud"),
-                    CapabilityUtil.makeProvider(BotaniaForgeClientCapabilities.WAND_HUD, new AsgardFlowerTile.BindableFlowerWandHud(tile))
+                    CapabilityUtil.makeProvider(BotaniaForgeClientCapabilities.WAND_HUD, new BindableFlowerWandHud(tile))
+            );
+        }
+        if (be instanceof SoarLeanderFlowerTile tile) {
+            e.addCapability(ResourceLocationHelper.prefix("wand_hud"),
+                    CapabilityUtil.makeProvider(BotaniaForgeClientCapabilities.WAND_HUD, new BindableFlowerWandHud(tile))
             );
         }
         if (be instanceof InfinityTileSpreader tile) {

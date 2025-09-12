@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "endless_compat:asgard_flower"
+      "item": "endless_compat:soarleander"
     },
     {
       "tag": "botania:floating_flowers"
     }
   ],
   "result": {
-    "item": "endless_compat:asgard_flower_floating"
+    "item": "endless_compat:soarleander_floating"
   }
 }

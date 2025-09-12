@@ -1,34 +1,44 @@
 {
   "type": "endless:extreme_craft",
   "pattern": [
-    "BBBBCBBBB",
-    "BACACACAB",
-    "BCAECEACB",
-    "BAEEDEEAB",
-    "CCCDFDCCC",
-    "BAEEDEEAB",
-    "BCAECEACB",
-    "BACACACAB",
-    "BBBBCBBBB"
+    "EE     EE",
+    "DFHHIHHFD",
+    "BCGGJGGCB",
+    "DFCEEECFD",
+    "CDBDBDBDC",
+    "AAAAAAAAA"
   ],
   "key": {
     "A": {
       "item": "endless:neutronium_ingot"
     },
     "B": {
-      "item": "endless:crystal_matrix_ingot"
+      "item": "endless:infinity_catalyst"
     },
     "C": {
-      "item": "botania:mana_pool"
+      "item": "botania:terrasteel_block"
     },
     "D": {
-      "item": "botania:fabulous_pool"
-    },
-    "E": {
       "item": "botania:dragonstone_block"
     },
+    "E": {
+      "item": "botania:life_essence"
+    },
     "F": {
-      "item": "botania:mana_tablet"
+      "item": "botania:gaia_ingot"
+    },
+    "G": {
+      "item": "botania:ender_air_bottle"
+    },
+    "H": {
+      "item": "botania:bifrost_pane"
+    },
+    "I": {
+      "item": "botania:mana_tablet",
+      "nbt": "{mana:500000}"
+    },
+    "J": {
+      "item": "botania:fabulous_pool"
     }
   },
   "result": {

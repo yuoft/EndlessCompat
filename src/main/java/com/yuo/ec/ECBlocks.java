@@ -23,13 +23,17 @@ public class ECBlocks {
 
     private static final BlockBehaviour.StateArgumentPredicate<EntityType<?>> NO_SPAWN = (state, world, pos, et) -> false;
     public static final BlockEntityType<AsgardFlowerTile> ASGARD = XplatAbstractions.INSTANCE.createBlockEntityType(AsgardFlowerTile::new);
+    public static final BlockEntityType<SoarLeanderFlowerTile> SOAR_LEANDER = XplatAbstractions.INSTANCE.createBlockEntityType(SoarLeanderFlowerTile::new);
     public static final BlockEntityType<InfinityTileSpreader> INFINITY_TILE = XplatAbstractions.INSTANCE.createBlockEntityType(InfinityTileSpreader::new);
     public static final BlockEntityType<InfinityManaPoolTile> INFINITY_POOL_TILE = XplatAbstractions.INSTANCE.createBlockEntityType(InfinityManaPoolTile::new);
 
     //Botania
     public static RegistryObject<Block> infinityPotato = BLOCKS.register("infinity_potato", InfinityPotato::new);
-    public static RegistryObject<Block> asgardFlower = BLOCKS.register("asgard_flower", () -> new ModFlowerBlock(MobEffects.HEALTH_BOOST, 360, FLOWER_PROPS, () -> ASGARD));
+    public static RegistryObject<Block> asgardFlower = BLOCKS.register("asgard_flower", () -> new AsgardFlowerBlock(MobEffects.HEALTH_BOOST, 360, FLOWER_PROPS, () -> ASGARD));
     public static RegistryObject<Block> asgardFlowerFloating = BLOCKS.register("asgard_flower_floating", () -> new FloatingSpecialFlowerBlock(BotaniaBlocks.FLOATING_PROPS, () -> ASGARD));
+    public static RegistryObject<Block> soarleander = BLOCKS.register("soarleander", () -> new SoarLeanderBlock(MobEffects.HEALTH_BOOST, 360, FLOWER_PROPS, () -> SOAR_LEANDER));
+    public static RegistryObject<Block> soarleanderFloating = BLOCKS.register("soarleander_floating", () -> new FloatingSpecialFlowerBlock(BotaniaBlocks.FLOATING_PROPS, () -> SOAR_LEANDER));
+
     public static RegistryObject<Block> infinityManaSpreader = BLOCKS.register("infinity_mana_spreader",
             () -> new InfinityManaSpreader(VariantEC.INFINITY, Properties.copy(Blocks.BIRCH_WOOD).isValidSpawn(NO_SPAWN).strength(5.0f, 9999.0f)));
     public static RegistryObject<Block> infinityManaPool = BLOCKS.register("infinity_mana_pool",

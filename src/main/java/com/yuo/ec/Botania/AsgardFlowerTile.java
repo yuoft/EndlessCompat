@@ -19,15 +19,7 @@ public class AsgardFlowerTile extends GeneratingFlowerBlockEntity {
     @Override
     public void tickFlower() {
         super.tickFlower();
-        if (level == null || level.isClientSide) return;
-
-        if (isOvergrowthAffected()) {
-            int delay = getModulatedDelay();
-            if (delay > 0 && ticksExisted % delay == 0) {
-                addMana(getGenMana());
-            }
-        }
-        emptyManaIntoCollector();
+        if (level == null || level.isClientSide || !isValidBinding() || getMana() >= getMaxMana()) return;
 
         double particleChance = 1F - (double) getMana() / (double) getMaxMana() / 3.5F;
         int color = getColor();
@@ -46,7 +38,8 @@ public class AsgardFlowerTile extends GeneratingFlowerBlockEntity {
         //产能
         long gameTime = level.getGameTime();
         if (gameTime % 2 == 0){
-            addMana(Integer.MAX_VALUE);
+            addMana(getGenMana());
+            this.sync();
         }
 
         //阻止周围产能花枯萎
@@ -86,6 +79,6 @@ public class AsgardFlowerTile extends GeneratingFlowerBlockEntity {
     //是否是被动花
     @Override
     public boolean isOvergrowthAffected() {
-        return true;
+        return false;
     }
 }

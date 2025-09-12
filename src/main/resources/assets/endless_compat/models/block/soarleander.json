@@ -1,6 +1,6 @@
 {
   "parent": "botania:block/shapes/cross",
   "textures": {
-    "cross": "endless_compat:block/asgardandelion"
+    "cross": "endless_compat:block/soarleander"
   }
 }

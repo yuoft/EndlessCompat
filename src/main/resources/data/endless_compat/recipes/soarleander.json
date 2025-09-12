@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    "xyx",
+    " z "
+  ],
+  "key": {
+    "x": {
+      "item": "botania:terrasteel_ingot"
+    },
+    "z": {
+      "item": "endless:crystal_matrix_ingot"
+    },
+    "y": {
+      "item": "botania:narslimmus"
+    }
+  },
+  "result": {
+    "item": "endless_compat:soarleander"
+  }
+}

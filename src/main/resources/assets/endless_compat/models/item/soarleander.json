@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "endless_compat:block/asgardandelion"
+    "layer0": "endless_compat:block/soarleander"
   }
 }

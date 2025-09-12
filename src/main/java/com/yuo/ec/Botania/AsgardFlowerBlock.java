@@ -1,9 +1,6 @@
 package com.yuo.ec.Botania;
 
 import com.yuo.ec.ECTileTypes;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.level.Level;
@@ -13,18 +10,14 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import vazkii.botania.api.BotaniaAPIClient;
-import vazkii.botania.api.block.WandHUD;
-import vazkii.botania.api.block_entity.BindableSpecialFlowerBlockEntity;
 import vazkii.botania.api.block_entity.SpecialFlowerBlockEntity;
-import vazkii.botania.client.core.helper.RenderHelper;
 import vazkii.botania.common.block.BotaniaBlock;
 import vazkii.botania.forge.block.ForgeSpecialFlowerBlock;
 
 import java.util.function.Supplier;
 
-public class ModFlowerBlock extends ForgeSpecialFlowerBlock {
-    public ModFlowerBlock(MobEffect stewEffect, int stewDuration, Properties props, Supplier<BlockEntityType<? extends SpecialFlowerBlockEntity>> blockEntityType) {
+public class AsgardFlowerBlock extends ForgeSpecialFlowerBlock {
+    public AsgardFlowerBlock(MobEffect stewEffect, int stewDuration, Properties props, Supplier<BlockEntityType<? extends SpecialFlowerBlockEntity>> blockEntityType) {
         super(stewEffect, stewDuration, props, blockEntityType);
     }
 

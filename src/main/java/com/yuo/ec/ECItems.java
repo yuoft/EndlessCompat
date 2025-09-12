@@ -20,6 +20,8 @@ public class ECItems {
     public static RegistryObject<BlockItem> infinityPotato = ITEMS.register("infinity_potato", () -> new ItemBlockPotato(ECBlocks.infinityPotato.get(), BLOCK_TAB.stacksTo(64)));
     public static RegistryObject<BlockItem> asgardFlower = ITEMS.register("asgard_flower", () -> new BlockItem(ECBlocks.asgardFlower.get(),  BLOCK_TAB.stacksTo(64)));
     public static RegistryObject<BlockItem> asgardFlowerFloating = ITEMS.register("asgard_flower_floating", () -> new BlockItem(ECBlocks.asgardFlowerFloating.get(),  BLOCK_TAB.stacksTo(64)));
+    public static RegistryObject<BlockItem> soarleander = ITEMS.register("soarleander", () -> new BlockItem(ECBlocks.soarleander.get(),  BLOCK_TAB.stacksTo(64)));
+    public static RegistryObject<BlockItem> soarleanderFloating = ITEMS.register("soarleander_floating", () -> new BlockItem(ECBlocks.soarleanderFloating.get(),  BLOCK_TAB.stacksTo(64)));
     public static RegistryObject<BlockItem> infinityManaSpreader = ITEMS.register("infinity_mana_spreader", () -> new BlockItem(ECBlocks.infinityManaSpreader.get(),  BLOCK_TAB.stacksTo(64)));
     public static RegistryObject<BlockItem> infinityManaPool = ITEMS.register("infinity_mana_pool", () -> new BlockItem(ECBlocks.infinityManaPool.get(),  BLOCK_TAB.stacksTo(64)));
 
