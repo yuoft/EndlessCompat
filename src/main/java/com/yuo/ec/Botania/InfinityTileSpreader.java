@@ -126,6 +126,23 @@ public class InfinityTileSpreader extends ExposedSimpleInventoryBlockEntity impl
                         }
                     }
                 }
+//                else if (receiverAt instanceof InfinityManaPoolTile pool) {
+//                    if (inNetwork && (pool != self.receiver || self.getVariant() == VariantEC.REDSTONE)) {
+//                        if (pool instanceof KeyLocked locked) {
+//                            if (!locked.getOutputKey().equals(self.getInputKey())) {
+//                                continue;
+//                            }
+//                        }
+//
+//                        int manaInPool = pool.getCurrentMana();
+//                        if (manaInPool > 0 && !self.isFull()) {
+//                            int manaMissing = self.getMaxMana() - self.mana;
+//                            int manaToRemove = Math.min(manaInPool, manaMissing);
+//                            pool.receiveMana(-manaToRemove);
+//                            self.receiveMana(manaToRemove);
+//                        }
+//                    }
+//                }
 
                 powered = powered || level.hasSignal(relPos, dir);
             }

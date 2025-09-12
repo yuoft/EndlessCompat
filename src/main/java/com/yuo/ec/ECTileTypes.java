@@ -1,6 +1,7 @@
 package com.yuo.ec;
 
 import com.yuo.ec.Botania.AsgardFlowerTile;
+import com.yuo.ec.Botania.InfinityManaPoolTile;
 import com.yuo.ec.Botania.InfinityPotatoTile;
 import com.yuo.ec.Botania.InfinityTileSpreader;
 import com.yuo.endless.Endless;
@@ -21,4 +22,7 @@ public class ECTileTypes {
     public static final RegistryObject<BlockEntityType<InfinityTileSpreader>> INFINITY_SPREADER = TILE_ENTITIES.register("infinity_spreader_tile",
             () -> BlockEntityType.Builder.of(InfinityTileSpreader::new,
                     ECBlocks.infinityManaSpreader.get()).build(null));
+    public static final RegistryObject<BlockEntityType<InfinityManaPoolTile>> INFINITY_POOL = TILE_ENTITIES.register("infinity_pool_tile",
+            () -> BlockEntityType.Builder.of(InfinityManaPoolTile::new,
+                    ECBlocks.infinityManaPool.get()).build(null));
 }

@@ -1,0 +1,11 @@
+{
+  "parent": "endless_compat:block/infinity_mana_pool",
+  "overrides": [
+    {
+      "model": "endless_compat:block/infinity_mana_pool_full",
+      "predicate": {
+        "botania:full": 1.0
+      }
+    }
+  ]
+}

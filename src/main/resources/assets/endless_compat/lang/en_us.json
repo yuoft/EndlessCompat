@@ -11,5 +11,7 @@
   "block.endless_compat.asgard_flower_floating": "§cAsgard Flower Floating",
   "block.endless_compat.infinity_egg": "§cInfinity Egg",
   "block.endless_compat.infinity_mana_spreader": "§cInfinity Mana Spreader",
-  "itemGroup.tab.endless_compat": "Endless Compat"
+  "block.endless_compat.infinity_mana_pool": "§cInfinity Mana Pool",
+  "itemGroup.tab.endless_compat": "Endless Compat",
+  "endless_compat.info.infinity_pool": "Max Mana 2147483647"
 }

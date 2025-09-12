@@ -35,16 +35,12 @@ import org.joml.Quaternionf;
 import vazkii.botania.api.item.TinyPotatoRenderEvent;
 import vazkii.botania.client.core.handler.MiscellaneousModels;
 import vazkii.botania.client.core.proxy.ClientProxy;
-import vazkii.botania.client.render.block_entity.TinyPotatoBlockEntityRenderer;
 import vazkii.botania.common.handler.ContributorList;
 import vazkii.botania.common.helper.VecHelper;
 import vazkii.botania.common.item.BotaniaItems;
-import vazkii.botania.common.item.block.TinyPotatoBlockItem;
 import vazkii.botania.common.item.equipment.bauble.FlugelTiaraItem.ClientLogic;
-import wayoftime.bloodmagic.client.helper.ShaderHelper;
 
 import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import java.util.Locale;
 import java.util.regex.Pattern;
 

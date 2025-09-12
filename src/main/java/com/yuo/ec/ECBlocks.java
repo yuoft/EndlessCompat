@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import vazkii.botania.common.block.BotaniaBlocks;
 import vazkii.botania.common.block.FloatingSpecialFlowerBlock;
+import vazkii.botania.common.block.mana.ManaPoolBlock.Variant;
 import vazkii.botania.xplat.XplatAbstractions;
 
 public class ECBlocks {
@@ -23,6 +24,7 @@ public class ECBlocks {
     private static final BlockBehaviour.StateArgumentPredicate<EntityType<?>> NO_SPAWN = (state, world, pos, et) -> false;
     public static final BlockEntityType<AsgardFlowerTile> ASGARD = XplatAbstractions.INSTANCE.createBlockEntityType(AsgardFlowerTile::new);
     public static final BlockEntityType<InfinityTileSpreader> INFINITY_TILE = XplatAbstractions.INSTANCE.createBlockEntityType(InfinityTileSpreader::new);
+    public static final BlockEntityType<InfinityManaPoolTile> INFINITY_POOL_TILE = XplatAbstractions.INSTANCE.createBlockEntityType(InfinityManaPoolTile::new);
 
     //Botania
     public static RegistryObject<Block> infinityPotato = BLOCKS.register("infinity_potato", InfinityPotato::new);
@@ -30,6 +32,8 @@ public class ECBlocks {
     public static RegistryObject<Block> asgardFlowerFloating = BLOCKS.register("asgard_flower_floating", () -> new FloatingSpecialFlowerBlock(BotaniaBlocks.FLOATING_PROPS, () -> ASGARD));
     public static RegistryObject<Block> infinityManaSpreader = BLOCKS.register("infinity_mana_spreader",
             () -> new InfinityManaSpreader(VariantEC.INFINITY, Properties.copy(Blocks.BIRCH_WOOD).isValidSpawn(NO_SPAWN).strength(5.0f, 9999.0f)));
+    public static RegistryObject<Block> infinityManaPool = BLOCKS.register("infinity_mana_pool",
+            () -> new InfinityManaPool(Variant.CREATIVE, Properties.copy(BotaniaBlocks.manaPool)));
 
     public static RegistryObject<Block> infinityEgg = BLOCKS.register("infinity_egg", () -> new DragonEggBlock(Properties.copy(Blocks.DRAGON_EGG)));
 }

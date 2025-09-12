@@ -1,0 +1,37 @@
+{
+  "type": "endless:extreme_craft",
+  "pattern": [
+    "BBBBCBBBB",
+    "BACACACAB",
+    "BCAECEACB",
+    "BAEEDEEAB",
+    "CCCDFDCCC",
+    "BAEEDEEAB",
+    "BCAECEACB",
+    "BACACACAB",
+    "BBBBCBBBB"
+  ],
+  "key": {
+    "A": {
+      "item": "endless:neutronium_ingot"
+    },
+    "B": {
+      "item": "endless:crystal_matrix_ingot"
+    },
+    "C": {
+      "item": "botania:mana_pool"
+    },
+    "D": {
+      "item": "botania:fabulous_pool"
+    },
+    "E": {
+      "item": "botania:dragonstone_block"
+    },
+    "F": {
+      "item": "botania:mana_tablet"
+    }
+  },
+  "result": {
+    "item": "endless_compat:infinity_mana_pool"
+  }
+}

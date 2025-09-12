@@ -1,0 +1,9 @@
+{
+  "parent": "botania:block/shapes/creative_mana_pool",
+  "textures": {
+    "bottom": "endless_compat:block/block_infinity",
+    "inside": "endless_compat:block/block_infinity",
+    "side": "endless_compat:block/block_infinity",
+    "top": "endless_compat:block/block_infinity"
+  }
+}

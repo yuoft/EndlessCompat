@@ -1,6 +1,7 @@
 package com.yuo.ec;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 public class CommonProxy {
 
@@ -14,7 +15,7 @@ public class CommonProxy {
 
     }
 
-    public void init() {
+    public void init(IEventBus modBus) {
 
     }
 

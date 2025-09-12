@@ -21,6 +21,7 @@ public class ECItems {
     public static RegistryObject<BlockItem> asgardFlower = ITEMS.register("asgard_flower", () -> new BlockItem(ECBlocks.asgardFlower.get(),  BLOCK_TAB.stacksTo(64)));
     public static RegistryObject<BlockItem> asgardFlowerFloating = ITEMS.register("asgard_flower_floating", () -> new BlockItem(ECBlocks.asgardFlowerFloating.get(),  BLOCK_TAB.stacksTo(64)));
     public static RegistryObject<BlockItem> infinityManaSpreader = ITEMS.register("infinity_mana_spreader", () -> new BlockItem(ECBlocks.infinityManaSpreader.get(),  BLOCK_TAB.stacksTo(64)));
+    public static RegistryObject<BlockItem> infinityManaPool = ITEMS.register("infinity_mana_pool", () -> new BlockItem(ECBlocks.infinityManaPool.get(),  BLOCK_TAB.stacksTo(64)));
 
     //Bm3
     public static final BloodOrbDeferredRegister BLOOD_ORBS = new BloodOrbDeferredRegister("endless_compat");

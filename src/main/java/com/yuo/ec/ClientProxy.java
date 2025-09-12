@@ -1,9 +1,6 @@
 package com.yuo.ec;
 
-import com.yuo.ec.Botania.AsgardFlowerTile;
-import com.yuo.ec.Botania.InfinityPotatoRender;
-import com.yuo.ec.Botania.InfinityTileSpreader;
-import com.yuo.ec.Botania.InfinityTileSpreaderRender;
+import com.yuo.ec.Botania.*;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -15,6 +12,7 @@ import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import vazkii.botania.api.BotaniaForgeCapabilities;
 import vazkii.botania.api.BotaniaForgeClientCapabilities;
 import vazkii.botania.client.render.block_entity.SpecialFlowerBlockEntityRenderer;
 import vazkii.botania.common.lib.ResourceLocationHelper;
@@ -35,8 +33,7 @@ public class ClientProxy extends CommonProxy{
 
     @OnlyIn(Dist.CLIENT)
     @Override
-    public void init() {
-        IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public void init(IEventBus modBus) {
         modBus.addListener(this::clientSetup);
     }
 
@@ -46,6 +43,7 @@ public class ClientProxy extends CommonProxy{
             BlockEntityRenderers.register(ECTileTypes.INFINITY_POTATO.get(), InfinityPotatoRender::new);
             BlockEntityRenderers.register(ECTileTypes.ASGARD_FLOWER.get(), SpecialFlowerBlockEntityRenderer::new);
             BlockEntityRenderers.register(ECTileTypes.INFINITY_SPREADER.get(), InfinityTileSpreaderRender::new);
+            BlockEntityRenderers.register(ECTileTypes.INFINITY_POOL.get(), InfinityManaPoolRender::new);
         });
 
         ItemBlockRenderTypes.setRenderLayer(ECBlocks.asgardFlower.get(), RenderType.cutout());
@@ -57,6 +55,9 @@ public class ClientProxy extends CommonProxy{
     }
 
 
+    /**
+     * 注册魔力条hud渲染能力
+     */
     public static void attachBeCapabilities(AttachCapabilitiesEvent<BlockEntity> e) {
         BlockEntity be = e.getObject();
         if (be instanceof AsgardFlowerTile tile) {
@@ -67,6 +68,11 @@ public class ClientProxy extends CommonProxy{
         if (be instanceof InfinityTileSpreader tile) {
             e.addCapability(ResourceLocationHelper.prefix("wand_hud"),
                     CapabilityUtil.makeProvider(BotaniaForgeClientCapabilities.WAND_HUD, new InfinityTileSpreader.WandHud(tile))
+            );
+        }
+        if (be instanceof InfinityManaPoolTile tile) {
+            e.addCapability(ResourceLocationHelper.prefix("wand_hud"),
+                    CapabilityUtil.makeProvider(BotaniaForgeClientCapabilities.WAND_HUD, new InfinityManaPoolTile.WandHud(tile))
             );
         }
     }
