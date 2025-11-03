@@ -2,6 +2,8 @@ package com.yuo.ec.Botania;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.yuo.ec.EndlessCompat;
+import com.yuo.ec.RlUtil;
 import com.yuo.endless.Endless;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font.DisplayMode;
@@ -81,7 +83,7 @@ public class InfinityPotatoRender implements BlockEntityRenderer<InfinityPotatoT
     }
 
     private static ResourceLocation taterLocation(String name) {
-        return ResourceLocation.fromNamespaceAndPath(Endless.MOD_ID, "textures/block/infinity_potato");
+        return RlUtil.fa( "textures/block/infinity_potato");
     }
 
     private static String normalizeName(String name) {

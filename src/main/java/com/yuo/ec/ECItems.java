@@ -28,7 +28,7 @@ public class ECItems {
     //Bm3
     public static final BloodOrbDeferredRegister BLOOD_ORBS = new BloodOrbDeferredRegister("endless_compat");
     public static final BloodOrbRegistryObject<BloodOrb> ORB_ARMOK = BLOOD_ORBS.register("orb_armok",
-            ()  -> new BloodOrb(ResourceLocation.fromNamespaceAndPath(EndlessCompat.MOD_ID, "armok_blood_orb"), 9, Integer.MAX_VALUE, 99));
+            ()  -> new BloodOrb(RlUtil.fa("armok_blood_orb"), 9, Integer.MAX_VALUE, 99));
     public static RegistryObject<Item> armokBloodOrb = ITEMS.register("armok_blood_orb", () -> new ArmokBloodOrb(ORB_ARMOK));
 //    public static RegistryObject<Item> archmageBloodOrb = ITEMS.register("archmage_blood_orb", () -> new ArmokBloodOrb(BloodMagicItems.ORB_ARCHMAGE));
 
