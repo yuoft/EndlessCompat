@@ -2,8 +2,6 @@ package com.yuo.ec;
 
 import com.yuo.endless.Items.EndlessItems;
 import com.yuo.endless.Recipe.ExtremeCraftingManager;
-import net.favouriteless.enchanted.common.blocks.altar.AltarBlock;
-import net.favouriteless.enchanted.common.blocks.entity.AltarBlockEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import vazkii.botania.common.block.BotaniaBlocks;

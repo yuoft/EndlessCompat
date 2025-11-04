@@ -2,7 +2,6 @@ package com.yuo.ec;
 
 import com.yuo.ec.Bm3.ArmokBloodOrb;
 import com.yuo.ec.Botania.ItemBlockPotato;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
